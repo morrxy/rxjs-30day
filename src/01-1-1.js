@@ -1,3 +1,5 @@
+// https://ithelp.ithome.com.tw/articles/10186104
+
 import { fromEvent } from 'rxjs'
 import { take } from 'rxjs/operators'
 

@@ -1,3 +1,5 @@
+// https://ithelp.ithome.com.tw/articles/10187520
+
 import { interval } from 'rxjs'
 import { skip } from 'rxjs/operators'
 

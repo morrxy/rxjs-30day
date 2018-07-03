@@ -1,3 +1,5 @@
+// https://ithelp.ithome.com.tw/articles/10187520
+
 import { concat, of, interval } from 'rxjs'
 import { take } from 'rxjs/operators'
 

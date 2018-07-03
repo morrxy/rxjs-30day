@@ -1,3 +1,5 @@
+// https://ithelp.ithome.com.tw/articles/10187005
+
 import { throwError } from 'rxjs'
 
 var source = throwError('Oop!')

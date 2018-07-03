@@ -1,3 +1,5 @@
+// https://ithelp.ithome.com.tw/articles/10187043
+
 import { of, Observable } from 'rxjs'
 
 var people = of('Jerry', 'Anna')
