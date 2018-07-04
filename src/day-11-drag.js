@@ -1,6 +1,6 @@
 // https://ithelp.ithome.com.tw/articles/10187756
 
-import './11-drag.scss'
+import './day-11-drag.scss'
 
 import { fromEvent } from 'rxjs'
 import { map, takeUntil, concatAll, filter, withLatestFrom } from 'rxjs/operators'

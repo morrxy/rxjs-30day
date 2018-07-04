@@ -1,10 +1,10 @@
-// https://ithelp.ithome.com.tw/articles/10187005
+// https://ithelp.ithome.com.tw/articles/10187043
 
 import { from } from 'rxjs'
 
 var source = from(new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve('Hello RxJS!')
+    reject('rejected!')
   }, 3000)
 }))
 
@@ -16,6 +16,6 @@ source.subscribe({
     console.log('complete!')
   },
   error: function (error) {
-    console.log(error)
+    console.log('error:', error)
   }
 })

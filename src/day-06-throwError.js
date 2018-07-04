@@ -1,8 +1,8 @@
-// https://ithelp.ithome.com.tw/articles/10187005
+// https://ithelp.ithome.com.tw/articles/10187043
 
-import { never } from 'rxjs'
+import { throwError } from 'rxjs'
 
-var source = never()
+var source = throwError('Oop!')
 
 source.subscribe({
   next: function (value) {
@@ -12,6 +12,6 @@ source.subscribe({
     console.log('complete!')
   },
   error: function (error) {
-    console.log(error)
+    console.log('Throw Error: ' + error)
   }
 })

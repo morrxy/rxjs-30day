@@ -1,8 +1,8 @@
-// https://ithelp.ithome.com.tw/articles/10187005
+// https://ithelp.ithome.com.tw/articles/10187043
 
-import { from } from 'rxjs'
+import { never } from 'rxjs'
 
-var source = from('鐵人賽')
+var source = never()
 
 source.subscribe({
   next: function (value) {

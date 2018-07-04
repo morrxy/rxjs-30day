@@ -1,8 +1,8 @@
-// https://ithelp.ithome.com.tw/articles/10187005
+// https://ithelp.ithome.com.tw/articles/10187043
 
-import { throwError } from 'rxjs'
+import { from } from 'rxjs'
 
-var source = throwError('Oop!')
+var source = from('鐵人賽')
 
 source.subscribe({
   next: function (value) {
@@ -12,6 +12,6 @@ source.subscribe({
     console.log('complete!')
   },
   error: function (error) {
-    console.log('Throw Error: ' + error)
+    console.log(error)
   }
 })

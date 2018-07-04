@@ -1,3 +1,5 @@
+// https://ithelp.ithome.com.tw/articles/10188263
+
 import { from, zip, interval } from 'rxjs'
 import { repeat } from 'rxjs/operators'
 
