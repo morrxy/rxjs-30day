@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node --max_old_space_size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js --env development",
+    "dev": "node --max_old_space_size=40960 node_modules/webpack-dev-server/bin/webpack-dev-server.js --env development",
     "build": "webpack --env production",
     "lint:js": "eslint . --fix"
   },

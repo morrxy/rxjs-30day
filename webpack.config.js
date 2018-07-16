@@ -117,7 +117,11 @@ module.exports = (mode) => {
 
   const config = mode === 'production' ? productionConfig : developmentConfig
 
-  return pages.map(page => merge(commonConfig, config, page, {
+  const configList = pages.map(page => merge(commonConfig, config, page, {
     mode
   }))
+
+  console.log('config list: ', configList.length)
+
+  return configList
 }
